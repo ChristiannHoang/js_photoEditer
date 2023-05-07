@@ -12,28 +12,35 @@
     cursor: pointer;
 }
 
-.editor__tool input {
+.editor__tool input[type="range"] {
     -webkit-appearance: none;
     appearance: none;
     overflow: hidden;
     height: 12px;
-    background-color: #f5506e;
-    background-size: 50% 100%;
-    transition: all .3s;
+    background: rgba(0, 0, 0, 0.6);
+    background-image: linear-gradient(#f5506e, #f5506e);
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
-
-
 
 .editor__tool input::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     height: 12px;
     width: 12px;
-    background-color: gray;
+    background-color: black;
 }
 
 .editor__tool input::-webkit-slider-runnable-track {
     appearance: none;
     -webkit-appearance: none;
+    background-color: transparent;
 }
- 
+
+.img__box {
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
